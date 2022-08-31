@@ -33,7 +33,7 @@ def Info_Check(Person):
     print("주민 등록 번호",":",Num)
     print("생년월일",":",Birth)
 
-## 주민 등록 번호 성별 출력 문자열 인덱싱
+## Q4 주민 등록 번호 성별 출력 문자열 인덱싱
 
 def People_Sex(Person):
     Sex=Person[7]
@@ -44,9 +44,66 @@ def People_Sex(Person):
     else:
         print("인간이 아닙니다")
 
-        
+## Q5 문자열 replace
+
+Example = "a:b:c:d"
+
+def Replace(Sentance):
+    Sentance_=Sentance.replace(":","#")
+    print(Sentance_)
+
+##Q6 리스트 교체
+
+list_ex = [1,3,5,4,2]
+
+def List_Ch(list_ex):
+    list_ex.sort()
+    list_ex.reverse()
+    print(list_ex)
+
+##Q7 리스트를 문자열로
+
+famous_saying = ['Life','is','too','short']
+
+def Make_String(list_ex):
+    List_ex=" ".join(list_ex)
+    print(List_ex)
+
+##Q8 튜블에 값 추가하기
+
+tuple_ex1=(1,2,3)
+
+def tuple_Add(tuple_ex):
+    tuple_add=(4,)
+    tuple_result=tuple_ex + tuple_add
+    print(tuple_result)
+
+## Q10 딕셔너리값 추출
+
+dic_ex1={'A':90,'B':80,'C':70}
+
+def dic_extract(dic_ex):
+    dic_ex.pop('B')
+    print(dic_ex)
+
+
+## Q11 중복 숫자 제거
+
+list_ex2 = [1,1,1,2,2,3,3,3,4,5]
+
+def List_set(list_ex):
+    list_set=list(set(list_ex))
+    print(list_set)
+
+
 if __name__=="__main__":
     Average_Score(Hong_score)
     Odd_or_Even(Number)
     Info_Check(People_info)
     People_Sex(People_info)
+    Replace(Example)
+    List_Ch(list_ex)
+    Make_String(famous_saying)
+    tuple_Add(tuple_ex1)
+    dic_extract(dic_ex1)
+    List_set(list_ex2)
