@@ -10,24 +10,27 @@ def is_odd(number):
 
 ## 입력으로 들어 오는 모든 수의 평균 값을 계산하는 함수
 
-#
-#def Avg():
-#    i=0
-#    total = 0
-#    while i !="":
-#        try: 
-#            number= int(input("숫자를 입력하세요 : "))
-#            total += number
-#            i+=1
-#        except IndentationError as e:
-#            print(e)
-#            break
-#    print(number/len(number))
+
+def Avg():
+    i=0
+    total = 0
+    Number=[]
+    while i !="":
+        try: 
+            number =(input("숫자를 입력하세요 : "))
+            int(number)
+            Number.append(number)
+            total += int(number)
+            i+=1
+        except:
+            break
+    print(total/len(Number))
 
 
 
 
 if __name__ == "__main__":
     is_odd(Q1_ex)
+    Avg()
     
     
